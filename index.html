@@ -26,10 +26,10 @@
                     </div>
                 </div>
 
-                <button class="clear" @click="listaItems=[]" v-if="listaItems.length">Limpar tudo</button>
+                <button class="clear" @click="limparItems" v-if="listaItems.length">Limpar tudo</button>
 
                 <input type="text" placeholder="Escreva uma nova tarefa..." v-model="itemNovo.descricao">
-                <button class="add" @click="adicionarItem">Adicionar</button>
+                <button class="add" @click="adicionarItem()">Adicionar</button>
 
                 <div class="instructions">
                     Instruções:
